@@ -14,3 +14,5 @@ document.addEventListener("DOMContentLoaded", function (e) {
     span.textContent = 0;
   });
 });
+
+// add stopwatch to show num of clicks in num of seconds
