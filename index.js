@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (e) {
-  const button = document.querySelector("#button");
+  const up = document.querySelector("#up");
+  const down = document.querySelector("#down");
   const reset = document.querySelector("#reset");
   const span = document.querySelector("#clickSpan");
 
-  button.addEventListener("click", function (e) {
+  up.addEventListener("click", function (e) {
     const currentNum = parseInt(span.textContent);
     const addNum = currentNum + 1;
 
@@ -12,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
   reset.addEventListener("click", function (e) {
     span.textContent = 0;
+  });
+
+  down.addEventListener("click", function (e) {
+    const currentNum = parseInt(span.textContent);
+    const subNum = currentNum - 1;
+    span.textContent = subNum;
   });
 });
 
